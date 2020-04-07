@@ -6,7 +6,7 @@
 	<bean id="mc" class="com.rana.controller.MyController"></bean>
 
 	<!-- handler mapping configuration that is predefine here name SimpleUriHandlerMapping -->
-	<bean id="suhm"
+	<bean 
 		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
 		<property name="mappings">
 			<props>
@@ -16,7 +16,7 @@
 	</bean>
 
 	<!-- configuration of view resolver that is predefine InternalResourceViewResolver -->
-	<bean id="irvr"
+	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/pages/" />
 		<property name="suffix" value=".jsp" />
