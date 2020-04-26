@@ -1,0 +1,12 @@
+// for creating table ......
+
+create table corona_patient(patId number(5) primary key,patName varchar2(15),age number(3),location varchar2(15),hospital varchar2(15));
+
+
+//for creating sequence.......
+
+create sequence patId_seq start with 1 increment by 1;
+
+// for inserting data in table query will be like this ........
+
+ insert into corona_patient(patid, patname, hospital, location, age) values(patId_seq.nextVal(), ?,?,?,?);
