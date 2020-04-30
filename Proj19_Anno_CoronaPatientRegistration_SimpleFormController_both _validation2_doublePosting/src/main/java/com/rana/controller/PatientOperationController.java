@@ -103,7 +103,7 @@ public class PatientOperationController {
 					return "patient_registration";
 						}
 				
-		//..............fghxfgh...................................................................................................
+		//..............kjjkjgijfid...................................................................................................
 					String result = null;
 					PatientDTO dto = new PatientDTO();
 					BeanUtils.copyProperties(cmd, dto);
