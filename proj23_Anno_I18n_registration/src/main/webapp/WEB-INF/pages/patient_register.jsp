@@ -13,6 +13,16 @@
     				<input type="submit"  value="<spring:message code='form.submit' />"/>
     </form:form>
     
+     <fmt:setLocale value="${pageContext.response.locale }"/> 
+     
+       <jsp:useBean id="dt"  class="java.util.Date"/>
+       <fmt:formatDate var="fdt" value="${dt}"/>
+       System Date ::  ${fdt}
+       
+       
+       <fmt:formatNumber  var="fprice"  value="345435435353" type="currency"/>
+       <br>  Product Price ::   ${fprice }
+    
     
     <br>
    <a href="?language=fr_FR">French</a> &nbsp; &nbsp;
